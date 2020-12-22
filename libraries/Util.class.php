@@ -1370,7 +1370,7 @@ class PMA_Util
             ) {
                 // see in js/functions.js the jQuery code attached to id inline_edit
                 // document.write conflicts with jQuery, hence used $().append()
-                $retval .= "<script type=\"text/javascript\">\n" .
+                $retval .= "<script>\n" .
                     "//<![CDATA[\n" .
                     "$('.tools form').last().after('[ <a href=\"#\" title=\"" .
                     PMA_escapeJsString(__('Inline edit of this query')) .
@@ -2421,7 +2421,7 @@ class PMA_Util
         $gotopage = $prompt . ' <select class="pageselector ';
         $gotopage .= ' ajax';
 
-        $gotopage .= '" name="' . $name . '" >';
+        $gotopage .= '" name="' . $name . '">';
         if ($nbTotalPage < $showAll) {
             $pages = range(1, $nbTotalPage);
         } else {
@@ -2621,7 +2621,7 @@ class PMA_Util
 
                 $_url_params[$name] = $pos + $max_count;
                 $list_navigator_html .= '<a' . $class . $title3 . ' href="' . $script
-                    . PMA_generate_common_url($_url_params) . '" >' . $caption3
+                    . PMA_generate_common_url($_url_params) . '">' . $caption3
                     . '</a>';
 
                 $_url_params[$name] = floor($count / $max_count) * $max_count;
@@ -2630,7 +2630,7 @@ class PMA_Util
                 }
 
                 $list_navigator_html .= '<a' . $class . $title4 . ' href="' . $script
-                    . PMA_generate_common_url($_url_params) . '" >' . $caption4
+                    . PMA_generate_common_url($_url_params) . '">' . $caption4
                     . '</a>';
             }
             $list_navigator_html .= '</div>' . "\n";

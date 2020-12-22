@@ -211,7 +211,7 @@ function PMA_RTN_getRowForList($routine, $rowclass = '')
                                          . $url_query
                                          . '&amp;sql_query=' . urlencode($sql_drop)
                                          . '&amp;goto=db_routines.php' . urlencode("?db={$db}")
-                                         . '" >' . $titles['Drop'] . "</a>\n";
+                                         . '">' . $titles['Drop'] . "</a>\n";
     } else {
         $retval .= "                {$titles['NoDrop']}\n";
     }
@@ -280,7 +280,7 @@ function PMA_TRI_getRowForList($trigger, $rowclass = '')
                                          . $url_query
                                          . '&amp;sql_query=' . urlencode($trigger['drop'])
                                          . '&amp;goto=db_triggers.php' . urlencode("?db={$db}")
-                                         . '" >' . $titles['Drop'] . "</a>\n";
+                                         . '">' . $titles['Drop'] . "</a>\n";
     } else {
         $retval .= "                {$titles['NoDrop']}\n";
     }
@@ -350,7 +350,7 @@ function PMA_EVN_getRowForList($event, $rowclass = '')
                                          . $url_query
                                          . '&amp;sql_query=' . urlencode($sql_drop)
                                          . '&amp;goto=db_events.php' . urlencode("?db={$db}")
-                                         . '" >' . $titles['Drop'] . "</a>\n";
+                                         . '">' . $titles['Drop'] . "</a>\n";
     } else {
         $retval .= "                {$titles['NoDrop']}\n";
     }

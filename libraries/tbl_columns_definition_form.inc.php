@@ -803,7 +803,7 @@ if ($display_type == 'horizontal') {
         $new_field .= '<td class="center">' . $content_row_val . '</td>';
     }
     ?>
-<script type="text/javascript">
+<script>
 // <![CDATA[
 var odd_row = <?php echo $odd_row; ?>;
 

@@ -379,7 +379,7 @@ if (isset($_REQUEST['do_save_data'])) {
             if ($is_show_stats) {
                 $new_table_string .= '<td class="value tbl_size">'
                     . '<a href="tbl_structure.php'
-                    . PMA_generate_common_url($tbl_url_params) . '#showusage" >'
+                    . PMA_generate_common_url($tbl_url_params) . '#showusage">'
                     . '<span>' . $formatted_size . '</span>'
                     . '<span class="unit">' . $unit . '</span>'
                     . '</a>'

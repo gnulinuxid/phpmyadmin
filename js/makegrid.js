@@ -1596,7 +1596,7 @@ function PMA_makegrid(t, enableResize, enableReorder, enableVisib, enableGridEdi
 
             // adjust g.cEdit
             g.cEdit.className = 'cEdit';
-            $(g.cEdit).html('<textarea class="edit_box" rows="1" ></textarea><div class="edit_area" />');
+            $(g.cEdit).html('<textarea class="edit_box" rows="1"></textarea><div class="edit_area" />');
             $(g.cEdit).hide();
 
             // assign cell editing hint

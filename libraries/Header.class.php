@@ -550,7 +550,8 @@ class PMA_Header
         $retval  = '<meta charset="utf-8" />';
         $retval .= '<meta name="referrer" content="no-referrer" />';
         $retval .= '<meta name="robots" content="noindex,nofollow" />';
-        $retval .= '<meta http-equiv="X-UA-Compatible" content="IE=Edge">';
+        $retval .= '<meta http-equiv="X-UA-Compatible" content="IE=Edge" />';
+        $retval .= '<meta name="viewport" content="width=device-width, initial-scale=1.0" />';
         if (! $GLOBALS['cfg']['AllowThirdPartyFraming']) {
             $retval .= '<style>html{display: none;}</style>';
         }

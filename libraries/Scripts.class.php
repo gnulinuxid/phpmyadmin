@@ -66,13 +66,13 @@ class PMA_Scripts
                     }
                 }
                 if ($include) {
-                    $params[] = "scripts[]=" . $value['filename'];
+                    $params[] = "scripts%5B%5D=" . $value['filename'];
                 }
             } else {
                 if ($value['before_statics'] === true) {
-                    $first_dynamic_scripts .= "<script type='text/javascript' src='js/" . $value['filename'] . "'></script>";
+                    $first_dynamic_scripts .= "<script src='js/" . $value['filename'] . "'></script>";
                 } else {
-                    $dynamic_scripts .= "<script type='text/javascript' src='js/" . $value['filename'] . "'></script>";
+                    $dynamic_scripts .= "<script src='js/" . $value['filename'] . "'></script>";
                 }
             }
         }
@@ -83,7 +83,7 @@ class PMA_Scripts
             $url = 'js/get_scripts.js.php?' . implode('&', $script_chunk);
 
             $static_scripts .= sprintf(
-                '<script type="text/javascript" src="%s"></script>',
+                '<script src="%s"></script>',
                 htmlspecialchars($url)
             );
         }
@@ -241,7 +241,7 @@ class PMA_Scripts
         $code .= '});';
         $this->addCode($code);
 
-        $retval .= '<script type="text/javascript">';
+        $retval .= '<script>';
         $retval .= "// <![CDATA[\n";
         $retval .= $this->_code;
         foreach ($this->_events as $js_event) {

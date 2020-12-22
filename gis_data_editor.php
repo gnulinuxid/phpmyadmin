@@ -140,7 +140,7 @@ echo '<input type="checkbox" id="choice" value="useBaseLayer"'
 echo '<label for="choice">' .  __("Use OpenStreetMaps as Base Layer") . '</label>';
 echo '</div>';
 
-echo '<script language="javascript" type="text/javascript">';
+echo '<script language="javascript">';
 echo $open_layers;
 echo '</script>';
 echo '<!-- End of visualization section -->';

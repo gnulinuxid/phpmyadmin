@@ -37,7 +37,7 @@ if (empty($import_list)) {
 <div id="import_form_status" style="display: none;"></div>
 <div id="importmain">
     <img src="<?php echo $GLOBALS['pmaThemeImage'];?>ajax_clock_small.gif" width="16" height="16" alt="ajax clock" style="display: none;" />
-    <script type="text/javascript">
+    <script>
         //<![CDATA[
         $( function() {
             // add event when user click on "Go" button

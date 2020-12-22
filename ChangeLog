@@ -1,6 +1,9 @@
 phpMyAdmin - ChangeLog
 ======================
 
+4.0.10.20-alphp (2020-12-22)
++ Forked and enhanced to work better under alphp
+
 4.0.10.20 (2017-03-28)
 - issue #12881 Fix database search when locale is not 'en'
 - issue        [security] Possible to bypass $cfg['Servers'][$i]['AllowNoPassword'], see PMASA-2017-08

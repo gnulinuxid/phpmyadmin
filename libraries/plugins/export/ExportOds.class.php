@@ -308,7 +308,7 @@ class ExportOds extends ExportPlugin
                 ) {
                     $GLOBALS['ods_buffer'] .=
                         '<table:table-cell office:value-type="float"'
-                            . ' office:value="' . $row[$j] . '" >'
+                            . ' office:value="' . $row[$j] . '">'
                         . '<text:p>'
                         . htmlspecialchars($row[$j])
                         . '</text:p>'

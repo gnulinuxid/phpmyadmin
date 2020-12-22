@@ -343,7 +343,7 @@ class PMA_DbSearch
                 . $browse_result_path . '\',\''
                 . PMA_escapeJsString(htmlspecialchars($each_table)) . '\',\''
                 . PMA_generate_common_url($GLOBALS['db'], $each_table) . '\''
-                . ');return false;" >'
+                . ');return false;">'
                 . __('Browse') . '</a></td>';
             $this_url_params['sql_query'] = $newsearchsqls['delete'];
             $delete_result_path = 'sql.php' . PMA_generate_common_url($this_url_params);
@@ -471,7 +471,7 @@ class PMA_DbSearch
         $html_output = '<!-- These two table-image and table-link elements display'
             . ' the table name in browse search results  -->';
         $html_output .= '<div id="table-info">';
-        $html_output .= '<a class="item" id="table-link" ></a>';
+        $html_output .= '<a class="item" id="table-link"></a>';
         $html_output .= '</div>';
         // div for browsing results
         $html_output .= '<div id="browse-results">';

@@ -838,7 +838,7 @@ EOT;
         $html_output .= '<tr>';
         $html_output .= '<td><label for="dataLabel">'
             . __("Use this column to label each point") . '</label></td>';
-        $html_output .= '<td><select name="dataLabel" id="dataLabel" >'
+        $html_output .= '<td><select name="dataLabel" id="dataLabel">'
             . '<option value = "">' . __('None') . '</option>';
         for ($j = 0; $j < count($this->_columnNames); $j++) {
             if (isset($dataLabel)
@@ -849,7 +849,7 @@ EOT;
                     . htmlspecialchars($this->_columnNames[$j]) . '</option>';
             } else {
                 $html_output .= '<option value="'
-                    . htmlspecialchars($this->_columnNames[$j]) . '" >'
+                    . htmlspecialchars($this->_columnNames[$j]) . '">'
                     . htmlspecialchars($this->_columnNames[$j]) . '</option>';
             }
         }
@@ -986,7 +986,7 @@ EOT;
             $odd_row = ! $odd_row;
             //Select options for column names
             $html_output .= '<th><select name="criteriaColumnNames[]" id="'
-                . 'tableid_' . $i . '" >';
+                . 'tableid_' . $i . '">';
             $html_output .= '<option value="' . 'pma_null' . '">' . __('None')
                 . '</option>';
             for ($j = 0 ; $j < count($this->_columnNames); $j++) {

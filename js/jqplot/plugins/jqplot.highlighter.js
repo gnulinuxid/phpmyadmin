@@ -38,7 +38,7 @@
      * To use this plugin, include the js
      * file in your source:
      * 
-     * > <script type="text/javascript" src="plugins/jqplot.highlighter.js"></script>
+     * > <script src="plugins/jqplot.highlighter.js"></script>
      * 
      * A tooltip providing information about the data point is enabled by default.
      * To disable the tooltip, set "showTooltip" to false.

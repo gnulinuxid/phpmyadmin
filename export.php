@@ -861,7 +861,7 @@ do {
                 'triggers', $export_type,
                 $do_relation, $do_comments, $do_mime, $do_dates
             )) {
-                break 2;
+                break;
             }
         }
         if (! $export_plugin->exportDBFooter($db)) {
@@ -969,7 +969,7 @@ if (! empty($asfile)) {
     echo '</div>' . "\n";
     echo "\n";
 ?>
-<script type="text/javascript">
+<script>
 //<![CDATA[
     var $body = $("body");
     $("#textSQLDUMP")

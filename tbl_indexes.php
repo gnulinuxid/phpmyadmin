@@ -251,7 +251,7 @@ if (PMA_MYSQL_INT_VERSION > 50500) {
                 </label>
             </strong>
         </div>
-        <select name="index[Index_type]" id="select_index_type" >
+        <select name="index[Index_type]" id="select_index_type">
             <?php echo $index->generateIndexSelector(); ?>
         </select>
     </div>

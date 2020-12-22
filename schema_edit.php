@@ -113,7 +113,7 @@ if ($cfgRelation['pdfwork']) {
 
         if ((isset($showwysiwyg) && $showwysiwyg == '1')) {
             ?>
-            <script type="text/javascript">
+            <script>
             //<![CDATA[
             ToggleDragDrop('pdflayout');
             //]]>

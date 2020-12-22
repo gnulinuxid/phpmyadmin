@@ -126,7 +126,7 @@ class PMA_Menu
             ? ''
             : ':' . $GLOBALS['cfg']['Server']['port'];
 
-        $separator = "<span class='separator item'>&nbsp;»</span>";
+        $separator = "<span class='separator item'>&nbsp;&raquo;</span>";
         $item = '<a href="%1$s?%2$s" class="item">';
 
 
@@ -140,6 +140,8 @@ class PMA_Menu
         $item .= '%3$s</a>';
         $retval .= "<div id='floating_menubar'></div>";
         $retval .= "<div id='serverinfo'>";
+        $retval .= "<a class='item' href='/alphp/'>Control Panel</a>";
+        $retval .= $separator;
         if (in_array(
             $GLOBALS['cfg']['TabsMode'],
             array('icons', 'both')

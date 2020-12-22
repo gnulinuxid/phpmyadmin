@@ -57,7 +57,7 @@ ksort($plugins);
  * Displays the page
  */
 ?>
-<script type="text/javascript">
+<script>
 pma_theme_image = '<?php echo $GLOBALS['pmaThemeImage']; ?>';
 </script>
 <div id="pluginsTabs">

@@ -774,6 +774,14 @@ var ResizeHandler = function () {
         var pos = Math.abs(parseInt($.cookie('pma_navi_width'), 10) || 0);
         this.setWidth(pos);
         $('#topmenu').menuResizer('resize');
+    } else {
+        $(window).on('load', {'resize_handler':this}, function(event) {
+            var windowWidth = $(window).width();
+            if (windowWidth < 768) {
+                event.data.resize_handler.setWidth(0);
+                event.data.resize_handler.panel_width = 0;
+            }
+        })
     }
     // Register the events for the resizer and the collapser
     $('#pma_navigation_resizer')

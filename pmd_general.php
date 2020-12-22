@@ -133,11 +133,11 @@ echo '</div>';
         <img id='key_SB_all' title="<?php echo __('Small/Big All'); ?>" alt="v"
             src="<?php echo $_SESSION['PMA_Theme']->getImgPath('pmd/downarrow1.png'); ?>" />
     </a>
-    <a href="#" onclick="Small_tab_invert(); return false" class="M_butt" target="_self" >
+    <a href="#" onclick="Small_tab_invert(); return false" class="M_butt" target="_self">
         <img title="<?php echo __('Toggle small/big'); ?>" alt="key"
             src="<?php echo $_SESSION['PMA_Theme']->getImgPath('pmd/bottom.png'); ?>" />
     </a>
-    <a href="#" onclick="Relation_lines_invert(); return false" class="M_butt" target="_self" >
+    <a href="#" onclick="Relation_lines_invert(); return false" class="M_butt" target="_self">
         <img title="<?php echo __('Toggle relation lines'); ?>" alt="key"
             src="<?php echo $_SESSION['PMA_Theme']->getImgPath('pmd/toggle_lines.png'); ?>" />
     </a>
@@ -370,7 +370,7 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
             echo 'onmouseout="this.className=\'small_tab_pref\';"';
             echo 'onclick="Click_option(\'pmd_optionse\',\''
                 . urlencode($tab_column[$t_n]["COLUMN_NAME"][$j]) . '\',\''
-                . $GLOBALS['PMD_OUT']["TABLE_NAME_SMALL"][$i].'\')" >';
+                . $GLOBALS['PMD_OUT']["TABLE_NAME_SMALL"][$i].'\')">';
             echo  '<img src="'
                 . $_SESSION['PMA_Theme']->getImgPath('pmd/exec_small.png')
                 . '" title="options" alt="" /></td> ';
@@ -389,7 +389,7 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
 <tbody>
 <tr>
     <td class="frams1" width="10px"></td>
-    <td class="frams5" width="99%" ></td>
+    <td class="frams5" width="99%"></td>
     <td class="frams2" width="10px"><div class="bor"></div></td>
 </tr>
 <tr>
@@ -491,7 +491,7 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
 <tbody>
 <tr>
     <td class="frams1" width="10px"></td>
-    <td class="frams5" width="99%" ></td>
+    <td class="frams5" width="99%"></td>
     <td class="frams2" width="10px"><div class="bor"></div></td>
 </tr>
 <tr>
@@ -536,7 +536,7 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
          <td width="58" class="nowrap"><?php echo __('Operator'); ?></td>
             <td width="102"><select name="operator" id="operator">
                     <option value="---" selected="selected">---</option>
-                    <option value="sum" > SUM </option>
+                    <option value="sum"> SUM </option>
                     <option value="min"> MIN </option>
                     <option value="max"> MAX </option>
                     <option value="avg"> AVG </option>
@@ -556,8 +556,8 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
           <td width="58" class="nowrap"><?php echo __('Operator'); ?></td>
             <td width="102"><select name="h_operator" id="h_operator">
                     <option value="---" selected="selected">---</option>
-                    <option value="None" > <?php echo __('None'); ?> </option>
-                    <option value="sum" > SUM </option>
+                    <option value="None"> <?php echo __('None'); ?> </option>
+                    <option value="sum"> SUM </option>
                     <option value="min"> MIN </option>
                     <option value="max"> MAX </option>
                     <option value="avg"> AVG </option>
@@ -613,7 +613,7 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
 <tbody>
 <tr>
     <td class="frams1" width="10px"></td>
-    <td class="frams5" width="99%" ></td>
+    <td class="frams5" width="99%"></td>
     <td class="frams2" width="10px"><div class="bor"></div></td>
 </tr>
 <tr>
@@ -661,7 +661,7 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
 <tbody>
     <tr>
         <td class="frams1" width="10px"></td>
-        <td class="frams5" width="99%" ></td>
+        <td class="frams5" width="99%"></td>
         <td class="frams2" width="10px"><div class="bor"></div></td>
     </tr>
 <tr>
@@ -678,8 +678,8 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
         <td width="58" class="nowrap"><?php echo __('Operator'); ?></td>
             <td width="102"><select name="hoperator" id="hoperator">
                     <option value="---" selected="selected">---</option>
-                    <option value="None" > None </option>
-                    <option value="sum" > SUM </option>
+                    <option value="None"> None </option>
+                    <option value="sum"> SUM </option>
                     <option value="min"> MIN </option>
                     <option value="max"> MAX </option>
                     <option value="avg"> AVG </option>
@@ -737,7 +737,7 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
 <tbody>
 <tr>
     <td class="frams1" width="10px"></td>
-    <td class="frams5" width="99%" ></td>
+    <td class="frams5" width="99%"></td>
     <td class="frams2" width="10px"><div class="bor"></div></td>
 </tr>
 <tr>
@@ -755,7 +755,7 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
             <td width="102">
                 <select name="operator" id="e_operator">
                     <option value="---" selected="selected">---</option>
-                    <option value="sum" > SUM </option>
+                    <option value="sum"> SUM </option>
                     <option value="min"> MIN </option>
                     <option value="max"> MAX </option>
                        <option value="avg"> AVG </option>
@@ -791,7 +791,7 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
 <tbody>
     <tr>
         <td class="frams1" width="10px"></td>
-        <td class="frams5" width="99%" ></td>
+        <td class="frams5" width="99%"></td>
         <td class="frams2" width="10px"><div class="bor"></div></td>
     </tr>
 <tr>
@@ -808,7 +808,7 @@ for ($i = 0; $i < count($GLOBALS['PMD']["TABLE_NAME"]); $i++) {
         <td width="58" class="nowrap"><?php echo __('Operator'); ?></td>
             <td width="102"><select name="erel_opt" id="erel_opt">
                 <option value="--" selected="selected"> -- </option>
-                    <option value="=" > = </option>
+                    <option value="="> = </option>
                     <option value="&gt;"> &gt; </option>
                     <option value="&lt;"> &lt; </option>
                     <option value="&gt;="> &gt;= </option>

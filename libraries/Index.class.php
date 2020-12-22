@@ -621,7 +621,7 @@ class PMA_Index
                 $r .= '    <a class="drop_primary_key_index_anchor';
                 $r .= ' ajax';
                 $r .= '" href="sql.php' . PMA_generate_common_url($this_params)
-                   . '" >'
+                   . '">'
                    . PMA_Util::getIcon('b_drop.png', __('Drop'))  . '</a>'
                    . '</td>' . "\n";
             }

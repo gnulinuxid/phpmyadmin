@@ -566,7 +566,7 @@ if (count($columns) > 0) {
 } // end if (we have columns in this table)
 
 if (PMA_Util::isForeignKeySupported($tbl_storage_engine)) {
-    $html_output .= '<div id="index_div" class="ajax" >'
+    $html_output .= '<div id="index_div" class="ajax">'
         . PMA_getHtmlForDisplayIndexes();
 }
 // Render HTML output

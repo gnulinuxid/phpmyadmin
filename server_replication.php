@@ -222,7 +222,7 @@ if (isset($GLOBALS['mr_configure'])) {
     echo __('Once you restarted MySQL server, please click on Go button. Afterwards, you should see a message informing you, that this server <b>is</b> configured as master');
     echo '</fieldset>';
     echo '<fieldset class="tblFooters">';
-    echo ' <form method="post" action="server_replication.php" >';
+    echo ' <form method="post" action="server_replication.php">';
     echo PMA_generate_common_hidden_inputs('', '');
     echo '  <input type="submit" value="' . __('Go') . '" id="goButton" />';
     echo ' </form>';

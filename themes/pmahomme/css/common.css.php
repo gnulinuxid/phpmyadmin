@@ -43,6 +43,7 @@ body#loginform {
 
 #page_content {
     margin: 0 .5em;
+    min-width: 300px;
 }
 
 <?php if (! empty($GLOBALS['cfg']['FontFamilyFixed'])) { ?>
@@ -1660,6 +1661,7 @@ li.no_bullets {
     margin-top: 1em;
     margin-bottom: 1em;
     width: 98%;
+    min-width: 300px;
     margin-<?php echo $left; ?>: 1%;
     border-top: .1em solid silver;
     text-align: <?php echo $right; ?>;
@@ -1714,14 +1716,21 @@ div.sqlvalidate {
 
 #main_pane_left {
     width: 60%;
+    min-width: 300px;
     float: <?php echo $left; ?>;
     padding-top: 1em;
 }
 
 #main_pane_right {
-    margin-<?php echo $left; ?>: 60%;
+    overflow: hidden;
     padding-top: 1em;
     padding-<?php echo $left; ?>: 1em;
+}
+
+#main_pane_right ul li {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-world;
 }
 
 .group {
@@ -2763,4 +2772,45 @@ body .ui-widget {
 }
 .jqplot-axis {
     overflow:hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #main_pane_left {
+        width: 100%;
+    }
+
+    #main_pane_right {
+        width: 100%;
+        padding-top: 0;
+        padding-<?php echo $left; ?>: 0;
+        padding-<?php echo $right; ?>: 2px;
+    }
+
+    ul#topmenu li.submenu {
+        margin-<?php echo $right; ?>: 40px;
+    }
+
+    ul.resizable-menu .submenu ul {
+        right: auto;
+    }
+
+    div#pma_navigation_collapser {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #serverinfo {
+        padding: .6em;
+        padding-<?php echo $left; ?>: 40px;
+    }
+
+    a#goto_pagetop {
+        padding: .5em
+    }
+
+    #tableslistcontainer {
+        overflow-x: auto;
+    }
 }

@@ -705,7 +705,7 @@ function getPrintMonitorHtml($ServerStatusData)
     $retval .= '<br/>';
     $retval .= '</div>';
 
-    $retval .= '<script type="text/javascript">';
+    $retval .= '<script>';
     $retval .= 'variableNames = [ ';
     $i=0;
     foreach ($ServerStatusData->status as $name=>$value) {

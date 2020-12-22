@@ -206,7 +206,7 @@ if ($svg_support) {
     </div>
     <div id="openlayersmap"></div>
     <input type="hidden" id="pmaThemeImage" value="<?php echo($GLOBALS['pmaThemeImage']); ?>" />
-    <script language="javascript" type="text/javascript">
+    <script language="javascript">
         function drawOpenLayers()
         {
             <?php

@@ -123,7 +123,7 @@ if ($server > 0 || count($cfg['Servers']) > 1
             )
         )
     ) {
-        echo '<li id="li_select_server" class="no_bullets" >';
+        echo '<li id="li_select_server" class="no_bullets">';
         include_once 'libraries/select_server.lib.php';
         echo PMA_Util::getImage('s_host.png') . " " . PMA_selectServer(true, true);
         echo '</li>';
@@ -151,7 +151,7 @@ if ($server > 0 || count($cfg['Servers']) > 1
                 );
             }
         } // end if
-        echo '    <li id="li_select_mysql_collation" class="no_bullets" >';
+        echo '    <li id="li_select_mysql_collation" class="no_bullets">';
         echo '        <form method="post" action="index.php">' . "\n"
            . PMA_generate_common_hidden_inputs(null, null, 4, 'collation_connection')
            . '            <label for="select_collation_connection">' . "\n"
@@ -296,6 +296,11 @@ if ($GLOBALS['cfg']['ShowServerInfo']) {
             PMA_printListItem(
                 $php_ext_string,
                 'li_used_php_extension'
+            );
+            $php_version_string = __('PHP version:') . ' ' . phpversion();
+            PMA_printListItem(
+                $php_version_string,
+                'li_used_php_version'
             );
         }
     }

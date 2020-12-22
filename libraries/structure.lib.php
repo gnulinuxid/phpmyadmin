@@ -293,33 +293,33 @@ function PMA_getHtmlForCheckAllTables($pmaThemeImage, $text_dir,
     $html_output .= '<option value="' . __('With selected:')
         . '" selected="selected">'
         . __('With selected:') . '</option>' . "\n";
-    $html_output .= '<option value="export" >'
+    $html_output .= '<option value="export">'
         . __('Export') . '</option>' . "\n";
-    $html_output .= '<option value="print" >'
+    $html_output .= '<option value="print">'
         . __('Print view') . '</option>' . "\n";
 
     if (!$db_is_information_schema
         && !$GLOBALS['cfg']['DisableMultiTableMaintenance']
     ) {
-        $html_output .= '<option value="empty_tbl" >'
+        $html_output .= '<option value="empty_tbl">'
             . __('Empty') . '</option>' . "\n";
-        $html_output .= '<option value="drop_tbl" >'
+        $html_output .= '<option value="drop_tbl">'
             . __('Drop') . '</option>' . "\n";
-        $html_output .= '<option value="check_tbl" >'
+        $html_output .= '<option value="check_tbl">'
             . __('Check table') . '</option>' . "\n";
         if (!PMA_DRIZZLE) {
-            $html_output .= '<option value="optimize_tbl" >'
+            $html_output .= '<option value="optimize_tbl">'
                 . __('Optimize table') . '</option>' . "\n";
-            $html_output .= '<option value="repair_tbl" >'
+            $html_output .= '<option value="repair_tbl">'
                 . __('Repair table') . '</option>' . "\n";
         }
-        $html_output .= '<option value="analyze_tbl" >'
+        $html_output .= '<option value="analyze_tbl">'
             . __('Analyze table') . '</option>' . "\n";
-        $html_output .= '<option value="add_prefix_tbl" >'
+        $html_output .= '<option value="add_prefix_tbl">'
             . __('Add prefix to table') . '</option>' . "\n";
-        $html_output .= '<option value="replace_prefix_tbl" >'
+        $html_output .= '<option value="replace_prefix_tbl">'
             . __('Replace table prefix') . '</option>' . "\n";
-        $html_output .= '<option value="copy_tbl_change_prefix" >'
+        $html_output .= '<option value="copy_tbl_change_prefix">'
             . __('Copy table with prefix') . '</option>' . "\n";
     }
     $html_output .= '</select>'
@@ -550,7 +550,7 @@ function PMA_getHtmlForInsertEmptyDropActionLinks($tbl_url_query, $table_is_view
     $html_output .= 'href="sql.php?' . $tbl_url_query
         . '&amp;reload=1&amp;purge=1&amp;sql_query='
         . urlencode($drop_query) . '&amp;message_to_show='
-        . urlencode($drop_message) . '" >'
+        . urlencode($drop_message) . '">'
         . $titles['Drop'] . '</a></td>';
 
     return $html_output;
@@ -570,7 +570,7 @@ function PMA_getHtmlForShowStats($tbl_url_query, $formatted_size,
     $unit, $overhead
 ) {
      $html_output = '<td class="value tbl_size"><a'
-        . 'href="tbl_structure.php?' . $tbl_url_query . '#showusage" >'
+        . 'href="tbl_structure.php?' . $tbl_url_query . '#showusage">'
         . '<span>' . $formatted_size . '</span> '
         . '<span class="unit">' . $unit . '</span>'
         . '</a></td>';
@@ -1335,7 +1335,7 @@ function PMA_getHtmlForDropColumn($tbl_is_view, $db_is_information_schema,
                     __('Column %s has been dropped'),
                     htmlspecialchars($row['Field'])
                 )
-            ) . '" >'
+            ) . '">'
             . $titles['Drop'] . '</a>'
             . '</td>';
     }
@@ -1838,7 +1838,7 @@ function PMA_getHtmlForActionRowInStructureTable($type, $tbl_storage_engine,
                     $message,
                     htmlspecialchars($row['Field'])
                 )
-            ) . '" >'
+            ) . '">'
             . $titles[$action] . '</a>';
         $action_enabled = true;
     }

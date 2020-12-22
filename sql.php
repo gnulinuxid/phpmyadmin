@@ -1172,7 +1172,7 @@ if ((0 == $num_rows && 0 == $unlim_num_rows) || $is_affected) {
 
     if (isset($profiling_results)) {
         // pma_token/url_query needed for chart export
-        echo '<script type="text/javascript">';
+        echo '<script>';
         echo 'pma_token = \'' . $_SESSION[' PMA_token '] . '\';';
         echo 'url_query = \''
             . (isset($url_query) ? $url_query : PMA_generate_common_url($db))
@@ -1216,7 +1216,7 @@ if ((0 == $num_rows && 0 == $unlim_num_rows) || $is_affected) {
         echo '</div>';
         echo '<div id="profilingchart" style="display:none;">';
         echo '</div>';
-        echo '<script type="text/javascript">';
+        echo '<script>';
         echo 'if($.jqplot !== undefined && $.jqplot.PieRenderer !== undefined) {';
         echo 'makeProfilingChart();';
         echo '}';

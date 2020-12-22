@@ -464,7 +464,7 @@ function PMA_displayJavascript($js_array)
     if (empty($js_array)) {
         return;
     }
-    echo '<script type="text/javascript">' . "\n";
+    echo '<script>' . "\n";
     echo implode(";\n", $js_array) . ";\n";
     echo '</script>' . "\n";
 }

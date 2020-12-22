@@ -542,7 +542,7 @@ function PMA_sendHeaderLocation($uri, $use_refresh = false)
         echo '<meta http-equiv="Cache-Control" content="no-cache">' . "\n";
         echo '<meta http-equiv="Refresh" content="0;url='
             .  htmlspecialchars($uri) . '">' . "\n";
-        echo '<script type="text/javascript">' . "\n";
+        echo '<script>' . "\n";
         echo '//<![CDATA[' . "\n";
         echo 'setTimeout("window.location = unescape(\'"'
             . PMA_escapeJsString($uri) . '"\')", 2000);' . "\n";
@@ -550,7 +550,7 @@ function PMA_sendHeaderLocation($uri, $use_refresh = false)
         echo '</script>' . "\n";
         echo '</head>' . "\n";
         echo '<body>' . "\n";
-        echo '<script type="text/javascript">' . "\n";
+        echo '<script>' . "\n";
         echo '//<![CDATA[' . "\n";
         echo 'document.write(\'<p><a href="' . PMA_escapeJsString(htmlspecialchars($uri)) . '">'
             . __('Go') . '</a></p>\');' . "\n";

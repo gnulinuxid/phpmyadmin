@@ -83,7 +83,7 @@ function PMA_selectServer($not_only_options, $ommit_fieldset)
 
                 $retval .= '<a class="disableAjax item" href="' . $GLOBALS['cfg']['DefaultTabServer']
                     . PMA_generate_common_url(array('server' => $key))
-                    . '" >' . htmlspecialchars($label) . '</a>';
+                    . '">' . htmlspecialchars($label) . '</a>';
             }
             $retval .= '</li>';
         } else {
