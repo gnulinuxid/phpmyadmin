@@ -141,7 +141,7 @@ class PMA_ShapeRecord extends ShapeRecord
 
         $readPoints = 0;
         reset($this->SHPData["parts"]);
-        while (list($partIndex, $partData) = each($this->SHPData["parts"])) {
+        foreach ($this->SHPData["parts"] as $partIndex => $partData) {
             if (! isset($this->SHPData["parts"][$partIndex]["points"])
                 || !is_array($this->SHPData["parts"][$partIndex]["points"])
             ) {

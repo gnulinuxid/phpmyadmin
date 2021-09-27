@@ -670,7 +670,7 @@ EOT;
         // else continue to form the where clause from column criteria values
         $fullWhereClause = $charsets = array();
         reset($_POST['criteriaColumnOperators']);
-        while (list($column_index, $operator) = each($_POST['criteriaColumnOperators'])) {
+        foreach ($_POST['criteriaColumnOperators'] as $column_index => $operator) {
             list($charsets[$column_index]) = explode(
                 '_', $_POST['criteriaColumnCollations'][$column_index]
             );
